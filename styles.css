@@ -31,11 +31,23 @@ html, body {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "a b b";
     }
+    #edu-title {
+        grid-area: a;
+    }
+    #edu-detail {
+        grid-area: b;
+    }
     #exp-box {
         grid-area: d;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "a b b";
+    }
+    #exp-title {
+        grid-area: a;
+    }
+    #exp-detail {
+        grid-area: b;
     }
 }
 
