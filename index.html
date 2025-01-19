@@ -3,29 +3,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
     <title>Homepage</title>
 </head>
 <body>
     <div class="container">
-        <div class="box red" id="pic-box"><img src="images/IMG-20240720-WA0022-cropped.jpg" alt="photo"></div>
-        <div class="box blue" id="intro-box"> Hi there. 👋 </div>
-        <div class="box yellow" id="edu-box">
-            <h1>Education</h1>
-            <ul>
-                <li>
-                    <h2>Indian Institute of Technology, Kharagpur</h2>
-                    <h3>M.Tech. in Computer Science and Engineering</h3>
-                    <h4>August 2023 - Present</h4>
-                </li>
-                <li>
-                    <h2>RCC Institute of Information Technology, Kolkata</h2>
-                    <h3>B.Tech. in Information Technology</h3>
-                    <h4>August 2017 - July 2021</h4>
-                </li>
-            </ul>
+        <div class="box outer red" id="pic-box"><img src="images/IMG-20240720-WA0022-cropped.jpg" alt="photo"></div>
+        <div class="box outer yellow" id="intro-box">
+            <div class="box yellow centered" id="hello-english">
+                <h1>Hi there. 👋</h1>
+            </div>
+            <div class="box yellow centered" id="hello-bangla">
+                <h1>নমস্কার 🙏</h1>
+            </div>
+            <div class="box yellow centered" id="welcome">
+                <h2>Welcome to my side of the Web.</h2>
+            </div>
+            <div class="box yellow centered" id="intro">
+                My name is Soham Banerjee. I am a second year Master's student in Computer Science and Engineering at the Indian Institute of Technology, Kharagpur.
+            </div>
         </div>
-        <div class="box white" id="exp-box"></div>
-        <div class="box white" id="foot-box">My portfolio: </div>
+        <div class="box outer blue centered" id="edu-box">
+            <div class="box blue righted" id="edu-title">
+                <h1>Education</h1>
+            </div>
+            <div class="box blue lefted" id="edu-detail">
+                <ul>
+                    <li>
+                        <h2>Indian Institute of Technology, Kharagpur</h2>
+                        <h3>M.Tech. in Computer Science and Engineering</h3>
+                        <h4>August 2023 - Present</h4>
+                    </li>
+                    <li>
+                        <h2>RCC Institute of Information Technology, Kolkata</h2>
+                        <h3>B.Tech. in Information Technology</h3>
+                        <h4>August 2017 - July 2021</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box outer white centered" id="exp-box">
+            <div class="box white righted" id="exp-title">
+                <h1>Experience</h1>
+            </div>
+            <div class="box white lefted" id="exp-detail">
+                <ul>
+                    <li>
+                        <h2>Infosys Ltd.</h2>
+                        <h3>Specialist Programmer</h3>
+                        <h4>August 2021 - July 2023</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box outer yellow" id="foot-box">My portfolio: </div>
     </div>
 </body>
 </html>
