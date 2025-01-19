@@ -2,6 +2,6 @@
 Under construction...
 
 TODO:
-  1. Responsive elements.
+  ~~1. Responsive elements.~~
   2. Dynamic elements.
   3. Further details.
