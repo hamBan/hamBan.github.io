@@ -15,7 +15,7 @@ html, body {
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); */
-    grid-template-areas: "a b" "c c" "d d";
+    grid-template-areas: "a b" "c c" "d d" "e f";
     gap: 20px;
 }
 
@@ -24,6 +24,7 @@ html, body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    border-radius: 15px;
 }
 
 .box.outer {
@@ -32,23 +33,23 @@ html, body {
     /* box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3); */
 }
 
-.box.red {
+.red {
     background-color: #c96868;
 }
 
-.box.yellow {
+.yellow {
     background-color: #fadfa1;
 }
 
-.box.white {
+.white {
     background-color: #fff4ea;
 }
 
-.box.blue {
+.blue {
     background-color: #7eacb5;
 }
 
-.box.centered {
+.centered {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +76,7 @@ html, body {
 
 #intro-box {
     display: grid;
-    grid-template-areas: "a b" "c c" "d d";
+    grid-template-areas: "a b" "c c" "d d" "e e";
 }
 
 #welcome {
@@ -84,13 +85,17 @@ html, body {
 
 #intro {
     grid-area: d;
+    padding: 20px;
+}
+
+#interests {
+    grid-area: e;
+    text-align: center;
 }
 
 #edu-box {
     grid-area: c;
     display: grid;
-    width: 100%;
-    height: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a b b";
 }
@@ -106,8 +111,6 @@ html, body {
 #exp-box {
     grid-area: d;
     display: grid;
-    width: 100%;
-    height: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a b b";
 }
@@ -118,4 +121,45 @@ html, body {
 
 #edu-detail {
     grid-area: b;
+}
+
+#mail {
+    grid-area: e;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#mail a {
+    text-decoration: none;
+    color: #fadfa1;;
+}
+
+#mail a:hover {
+    text-decoration: underline;
+    color: #fff4ea;
+}
+
+#social {
+    grid-area: f;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#social img {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+#github:hover {
+    content: url('images/github-logo.svg');
+}
+
+#linkedin:hover {
+    content: url('images/linkedin-logo.svg');
 }
